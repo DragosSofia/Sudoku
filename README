@@ -1,0 +1,27 @@
+TASKUL 1 
+
+Folosim biblioteca externa cJSON penntru a parsa jsonul dat si afisam imaginea primita
+
+TASKUL 2
+
+Imaginea citita la taskul anterior si rotim fiecare patrat pentru a optine numerele cerute
+
+TASKUL 3
+
+Din imaginea intoarsa la taskul 2 vom recunoaste numerele si le vom plasa in matricea sudoku. Pentru matricea dfacuta acum vom 
+verifica corectitudinea cu ajutorul celor 3 matrici de frecventa : una pentru linii , una pentru coloane si una pentru patrate.
+Daca toate frecventele vor fi 1 la final atunci afisam jsonl cu mesajul Win , in caz contrar afisam Lose .
+
+Taskul 4 
+
+Din imaginea data recunoastem numerele si le punem in matricea sudoku . Apoi aplicam metoda Back Tracking pentru a vedea daca se poate o solutie pentru datele de intrare
+Dupa ce aflam matricea completa completam matricea de pixeli cu numerele cerut facute cu bitii de culoarea roz .
+
+Taskul 5 
+
+Aplicam acelasi algoritm ca la tema 4 doar ca in cazul in care nu gasim o solutie golim toate patratelele cu numere si inseram un x
+
+Precizari 
+
+Programul implementat de mine pierde 800 de biti din cauza parsarii din biblioteca cJSON cu toate ca se elibereaza memoria din structura 
+cJOSN folosita. Acest memory leak pierde 50 de puncte din 135 pentru asta .
